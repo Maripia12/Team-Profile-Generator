@@ -1,28 +1,17 @@
 * {margin: auto;
-   background-image: url(../Images/background-image.jpg); 
+  
    
 }
 
-.container {
-     
-     
-    padding: 20px;
-    margin-top: 200px; 
-    border-radius: 5px;
-    justify-content: center;  
-    max-width: 52%;
-    float: center;
-    display:flex;
-    position: relative;
-    right: 85px;
-     
-}  
+
 
       
 .card {
 
     border: 2px solid black;
     border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 45px;
     
     
      
@@ -32,18 +21,17 @@
 
 
 h5  {
-    background: grey;
+    background: rgb(104, 122, 180);
 
 
 }
 
  
-     
         
 
 
 header {
-    border: 5px solid grey;
+    border: 5px solid rgb(82, 84, 214);
     
 }
 
@@ -57,10 +45,6 @@ header {
   
 }
 
-{
-    background: blue;
-
-}
 
     
    
