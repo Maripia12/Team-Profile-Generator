@@ -9,11 +9,11 @@ const Intern = require('./lib/Intern');
 
 
 
-// const employeesArray = []
+const employeesArray = []
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const buildTeam = (answers) =>
+const buildTeam = (answers) => 
   `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -88,9 +88,9 @@ const buildTeam = (answers) =>
 
 const init = () => {
   mainMenuQuestions()
-    .then((answers) => writeFileAsync("index.html", buildTeam(answers)))
-    .then(() => console.log("Successfully created team"))
-    .catch((err) => console.error(err));
+   //  .then((answers) => writeFileAsync("index.html", buildTeam(answers)))
+   //  .then(() => console.log("Successfully created team"))
+   //  .catch((err) => console.error(err));
 };
 
 init();
@@ -157,7 +157,8 @@ inquirer
                     console.log('RUNNING MAIN AGAIN')
                      mainMenuQuestions()
                  } else {
-                    buildTeam()
+                    buildTeam(answer)
+                   fs.writeFileAsync("index.html", buildTeam(answers));
                  }
               })
             })
@@ -193,7 +194,8 @@ inquirer
                  if(runAgain){
                      mainMenuQuestions()
                  } else {
-                    buildTeam()
+                    buildTeam(answer)
+                   fs.writeFileAsync("index.html", buildTeam(answers));
                  }
               })
             })
@@ -228,33 +230,27 @@ inquirer
                   if (answer.runAgain === true) {
                      mainMenuQuestions()
                   } else {
-                     buildTeam();
+                    buildTeam(answer) 
+                    fs.writeFileAsync("index.html", buildTeam(answers))
                     
                   }  
                })   
             })
            
+         }
+      })
+               
+   
+   }
             
 
       
-      }
-   })
-            
-
-}
 
 
-// const init = () => {
-//   mainMenuQuestions()
-//     .then((answers) => writeFileAsync("index.html", buildTeam(answers)))
-//     .then(() => console.log("Successfully created team"))
-//     .catch((err) => console.error(err));
-// };
 
-// init();
 
                         
-mainMenuQuestions();
+// mainMenuQuestions();
 
 
 

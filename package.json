@@ -1,0 +1,16 @@
+{
+  "name": "Assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.1.1",
+    "jest": "^27.0.6"
+  }
+}
