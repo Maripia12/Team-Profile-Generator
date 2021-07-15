@@ -2,7 +2,7 @@
 
 ## Objective: 
 
-    Build a Node.js command-line application that takes in information about employees on a software engineering team. Also generate an HTML webpage that displays summaries for each person. Also a unit test will run every code and ensure that it passes each test.
+Build a Node.js command-line application that takes in information about employees on a software engineering team. Also generate an HTML webpage that displays summaries for each person. Also a unit test will run every code and ensure that it passes each test.
 
 ## Details:
 
@@ -18,4 +18,7 @@ email address, and office number. Then when all is entered I'm presented with an
 
 ---
 
-![screenshot](Images/screenshotHW.png)
+https://drive.google.com/file/d/1Wb4zkFrTJ391_cnyi8j4tuNCZ0qhrhRe/view
+
+
+![screenshot](Images/screenshotHW1.png)

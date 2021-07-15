@@ -11,7 +11,7 @@ const Intern = require('./lib/Intern');
 
 const employeesArray = []
 
-const writeFileAsync = util.promisify(fs.writeFile);
+
 
 const buildTeam = (answers) => 
   `<!DOCTYPE html>
